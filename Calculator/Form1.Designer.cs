@@ -48,6 +48,8 @@
             this.btnMultiply = new System.Windows.Forms.Button();
             this.txtDisplay2 = new System.Windows.Forms.TextBox();
             this.bntPlusMinus = new System.Windows.Forms.Button();
+            this.btnCE = new System.Windows.Forms.Button();
+            this.btnBackSpace = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtDisplay
@@ -55,7 +57,7 @@
             this.txtDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDisplay.Location = new System.Drawing.Point(66, 71);
             this.txtDisplay.Name = "txtDisplay";
-            this.txtDisplay.Size = new System.Drawing.Size(359, 38);
+            this.txtDisplay.Size = new System.Drawing.Size(436, 38);
             this.txtDisplay.TabIndex = 0;
             this.txtDisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -209,7 +211,7 @@
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(49, 40);
             this.btnClear.TabIndex = 14;
-            this.btnClear.Text = "Clear";
+            this.btnClear.Text = "C";
             this.btnClear.UseVisualStyleBackColor = true;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
@@ -250,7 +252,7 @@
             // 
             this.txtDisplay2.Location = new System.Drawing.Point(231, 40);
             this.txtDisplay2.Name = "txtDisplay2";
-            this.txtDisplay2.Size = new System.Drawing.Size(193, 20);
+            this.txtDisplay2.Size = new System.Drawing.Size(271, 20);
             this.txtDisplay2.TabIndex = 18;
             this.txtDisplay2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -265,12 +267,36 @@
             this.bntPlusMinus.UseVisualStyleBackColor = true;
             this.bntPlusMinus.Click += new System.EventHandler(this.bntPlusMinus_Click);
             // 
+            // btnCE
+            // 
+            this.btnCE.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCE.Location = new System.Drawing.Point(375, 378);
+            this.btnCE.Name = "btnCE";
+            this.btnCE.Size = new System.Drawing.Size(49, 40);
+            this.btnCE.TabIndex = 21;
+            this.btnCE.Text = "CE";
+            this.btnCE.UseVisualStyleBackColor = true;
+            this.btnCE.Click += new System.EventHandler(this.btnCE_Click);
+            // 
+            // btnBackSpace
+            // 
+            this.btnBackSpace.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBackSpace.Location = new System.Drawing.Point(453, 160);
+            this.btnBackSpace.Name = "btnBackSpace";
+            this.btnBackSpace.Size = new System.Drawing.Size(49, 40);
+            this.btnBackSpace.TabIndex = 22;
+            this.btnBackSpace.Text = "<-";
+            this.btnBackSpace.UseVisualStyleBackColor = true;
+            this.btnBackSpace.Click += new System.EventHandler(this.btnBackSpace_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(484, 448);
+            this.ClientSize = new System.Drawing.Size(514, 448);
+            this.Controls.Add(this.btnBackSpace);
+            this.Controls.Add(this.btnCE);
             this.Controls.Add(this.bntPlusMinus);
             this.Controls.Add(this.txtDisplay2);
             this.Controls.Add(this.btnMultiply);
@@ -321,6 +347,8 @@
         private System.Windows.Forms.Button btnMultiply;
         private System.Windows.Forms.TextBox txtDisplay2;
         private System.Windows.Forms.Button bntPlusMinus;
+        private System.Windows.Forms.Button btnCE;
+        private System.Windows.Forms.Button btnBackSpace;
     }
 }
 

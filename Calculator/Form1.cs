@@ -18,6 +18,7 @@ namespace Calculator
         private bool btnMinusClicked = false;
         private bool btnDivideClicked = false;
         private bool btnMultiplyClicked = false;
+
         public Form1()
         {
             InitializeComponent();
@@ -189,7 +190,13 @@ namespace Calculator
         private void btnClear_Click(object sender, EventArgs e)
         {
             txtDisplay.Clear();
+            txtDisplay2.Clear();
         }
+        private void btnCE_Click(object sender, EventArgs e)
+        {
+            txtDisplay.Clear();
+        }
+
 
         private void bntPlusMinus_Click(object sender, EventArgs e)
         {
@@ -204,5 +211,11 @@ namespace Calculator
             
         }
 
+        private void btnBackSpace_Click(object sender, EventArgs e)
+        {
+            txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1, 1);
+        }
+
+    
     }
 }
